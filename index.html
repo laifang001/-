@@ -23,8 +23,7 @@
         header {
             background: linear-gradient(135deg, #1a2a3a 0%, #2c3e50 100%);
             color: white;
-            text-align: center;
-            padding: 50px 20px 40px;
+            padding: 40px 20px;
             position: relative;
             overflow: hidden;
         }
@@ -39,18 +38,35 @@
             background: radial-gradient(circle at 30% 50%, rgba(52, 152, 219, 0.1) 0%, transparent 50%);
         }
 
-        h1 {
+        .brand {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            position: relative;
+        }
+
+        .logo {
+            width: 64px;
+            height: 64px;
+            object-fit: contain;
+            background: #fff;
+            border-radius: 12px;
+            padding: 4px;
+            flex-shrink: 0;
+        }
+
+        .brand-text h1 {
             font-size: 32px;
             font-weight: 600;
             letter-spacing: 2px;
-            margin-bottom: 10px;
-            position: relative;
+            margin-bottom: 4px;
         }
 
         header p {
             font-size: 16px;
             color: #a0b4c8;
-            position: relative;
         }
 
         /* 导航 */
@@ -193,7 +209,8 @@
 
         /* 响应式 */
         @media (max-width: 768px) {
-            h1 { font-size: 24px; }
+            .brand-text h1 { font-size: 24px; }
+            .logo { width: 44px; height: 44px; }
             section { padding: 24px; }
             nav a { margin: 0 12px; font-size: 14px; }
         }
@@ -201,8 +218,13 @@
 </head>
 <body>
     <header>
-        <h1>烟台市莱房房屋置换有限公司</h1>
-        <p>专业建筑设计与装饰装修综合服务企业</p >
+        <div class="brand">
+            < img src="logo.png" alt="莱房置换logo" class="logo">
+            <div class="brand-text">
+                <h1>烟台市莱房房屋置换有限公司</h1>
+                <p>专业建筑设计与装饰装修综合服务企业</p >
+            </div>
+        </div>
     </header>
 
     <nav>
@@ -214,7 +236,6 @@
         <section id="about">
             <h2>公司简介</h2>
             <p>烟台市莱房房屋置换有限公司，立足于烟台本地房产市场，深耕房屋置换、建筑设计，装饰装修相关业务。公司熟悉本地楼市政策、产权办理流程，专注为烟台广大客户提供安全、省心、专业的房产置换解决方案。</p >
-            
 
             <p>公司秉持诚信经营的服务理念，熟悉二手房交易、房屋置换、房源匹配等全流程业务，立足莱山，服务烟台全域，致力于解决客户以旧换新、房屋置换、房产交易过程中的各类难题。</p >
         </section>
