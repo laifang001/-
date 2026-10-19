@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>烟台市莱房房屋置换有限公司</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft Yahei", "PingFang SC", sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #e8ecf1 100%);
+            color: #333;
+            line-height: 1.8;
+            min-height: 100vh;
+        }
+
+        /* 头部 */
+        header {
+            background: linear-gradient(135deg, #1a2a3a 0%, #2c3e50 100%);
+            color: white;
+            text-align: center;
+            padding: 50px 20px 40px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 30% 50%, rgba(52, 152, 219, 0.1) 0%, transparent 50%);
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+            position: relative;
+        }
+
+        header p {
+            font-size: 16px;
+            color: #a0b4c8;
+            position: relative;
+        }
+
+        /* 导航 */
+        nav {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            text-align: center;
+            padding: 0;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: #2c3e50;
+            text-decoration: none;
+            margin: 0 24px;
+            font-size: 15px;
+            font-weight: 500;
+            padding: 16px 8px;
+            display: inline-block;
+            position: relative;
+            transition: color 0.3s;
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 2px;
+            background: #3498db;
+            transition: width 0.3s;
+        }
+
+        nav a:hover {
+            color: #3498db;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        /* 主容器 */
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            background: #fff;
+            padding: 40px;
+            margin-bottom: 30px;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        section:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #1a2a3a;
+            margin-bottom: 20px;
+            font-size: 22px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        h2::before {
+            content: '';
+            display: inline-block;
+            width: 4px;
+            height: 24px;
+            background: linear-gradient(180deg, #3498db, #2980b9);
+            border-radius: 2px;
+        }
+
+        section p {
+            color: #555;
+            font-size: 15px;
+            line-height: 2;
+        }
+
+        /* 服务列表 */
+        .service-item {
+            padding: 16px 20px;
+            border-bottom: 1px solid #f0f0f0;
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            transition: background 0.3s;
+            border-radius: 8px;
+        }
+
+        .service-item:last-child {
+            border-bottom: none;
+        }
+
+        .service-item:hover {
+            background: #f8fafc;
+        }
+
+        .service-icon {
+            width: 36px;
+            height: 36px;
+            background: linear-gradient(135deg, #3498db, #2980b9);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 18px;
+            flex-shrink: 0;
+        }
+
+        .service-item span {
+            padding-top: 6px;
+            color: #444;
+            font-size: 15px;
+        }
+
+        /* 底部 */
+        footer {
+            background: linear-gradient(135deg, #1a2a3a 0%, #2c3e50 100%);
+            color: #a0b4c8;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 40px;
+            font-size: 14px;
+        }
+
+        /* 响应式 */
+        @media (max-width: 768px) {
+            h1 { font-size: 24px; }
+            section { padding: 24px; }
+            nav a { margin: 0 12px; font-size: 14px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>烟台市莱房房屋置换有限公司</h1>
+        <p>专业建筑设计与装饰装修综合服务企业</p >
+    </header>
+
+    <nav>
+        <a href=" ">公司简介</a >
+        <a href="#service">产品服务</a >
+    </nav>
+
+    <div class="container">
+        <section id="about">
+            <h2>公司简介</h2>
+            <p>烟台市莱房房屋置换有限公司，立足于烟台本地房产市场，深耕房屋置换、建筑设计，装饰装修相关业务。公司熟悉本地楼市政策、产权办理流程，专注为烟台广大客户提供安全、省心、专业的房产置换解决方案。</p >
+            
+
+            <p>公司秉持诚信经营的服务理念，熟悉二手房交易、房屋置换、房源匹配等全流程业务，立足莱山，服务烟台全域，致力于解决客户以旧换新、房屋置换、房产交易过程中的各类难题。</p >
+        </section>
+
+        <section id="service">
+            <h2>产品服务</h2>
+            <div class="service-item">
+                <div class="service-icon"></div>
+                <span>房屋置换服务：旧房与新房、旧房之间置换方案对接，置换流程咨询与代办</span>
+            </div>
+            <div class="service-item">
+                <div class="service-icon"></div>
+                <span>二手房房源匹配、看房对接、交易咨询服务</span>
+            </div>
+            <div class="service-item">
+                <div class="service-icon"></div>
+                <span>房产交易政策解读、交易流程指导</span>
+            </div>
+            <div class="service-item">
+                <div class="service-icon"></div>
+                <span>建筑设计，装饰装修</span>
+            </div>
+            <div class="service-item">
+                <div class="service-icon"></div>
+                <span>置业方案定制，根据客户需求推荐合适房产方案</span>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>烟台市莱房房屋置换有限公司  版权所有</p >
+    </footer>
+</body>
+</html>
